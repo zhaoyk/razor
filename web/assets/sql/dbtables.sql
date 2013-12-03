@@ -530,7 +530,7 @@ CREATE TABLE IF NOT EXISTS `umsinstall_wifi_towers` (
 
 
 -- 
--- 表的结构 `tag_group`
+-- Table Structure of  `tag_group`
 -- 
 
 CREATE TABLE IF NOT EXISTS `umsinstall_tag_group` (
@@ -789,19 +789,6 @@ CREATE TABLE IF NOT EXISTS `umsinstall_getui_product` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;
-
-
--- 
--- Default value for table `gcmappkeys`
--- 
-
-CREATE TABLE IF NOT EXISTS `umsinstall_gcmappkeys` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) NOT NULL,
-  `appkey` varchar(128) NOT NULL,
-  `status` smallint(2) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 
 CREATE TABLE IF NOT EXISTS `umsinstall_device_tag` (
