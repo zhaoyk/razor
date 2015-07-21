@@ -222,7 +222,7 @@
 			name = UMSAgentExampleTests;
 			productName = UMSAgentExampleTests;
 			productReference = 3609A5CA15180C7300BEDA05 /* UMSAgentExampleTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -233,7 +233,7 @@
 				LastUpgradeCheck = 0430;
 				TargetAttributes = {
 					3609A5A815180C7300BEDA05 = {
-						DevelopmentTeam = F9C6W6M498;
+						DevelopmentTeam = A5R42UNHZM;
 					};
 				};
 			};

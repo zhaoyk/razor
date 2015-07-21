@@ -165,3 +165,7 @@ pip-log.txt
 #Subversion
 .svn
 .svn/
+
+
+# xcode
+xcuserdata

@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="UMSAgent.csproj">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UMSApi.cs">
+    <Files>
+      <File FileName="UMSApi.cs" Line="38" Column="26" />
+      <File FileName="Common/DataManager.cs" Line="74" Column="35" />
+      <File FileName="MyObject/UserRepolicy.cs" Line="34" Column="24" />
+      <File FileName="UMS/UmsManager.cs" Line="52" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
