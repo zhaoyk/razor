@@ -425,11 +425,20 @@ public class CommonUtil {
 			}
 			return null;
 		}
-
+		int mcc = 0;
+		int mnc = 0;
 		String operator = mTelNet.getNetworkOperator();
-		// System.out.println("operator------>"+operator.toString());
-		int mcc = Integer.parseInt(operator.substring(0, 3));
-		int mnc = Integer.parseInt(operator.substring(3));
+		System.out.println(operator);
+		if (operator != null && operator.length() >= 3) {
+			try {
+				mcc = Integer.parseInt(operator.substring(0, 3));
+				if (operator.length() > 3) {
+					mnc = Integer.parseInt(operator.substring(3));
+				}
+			} catch (Exception e) {
+				// ignore
+			}
+		}
 		int cid = location.getCid();
 		int lac = location.getLac();
 
@@ -628,6 +637,9 @@ public class CommonUtil {
 				.getSystemService(Context.CONNECTIVITY_SERVICE);
 
 		NetworkInfo info = cm.getActiveNetworkInfo();
+		if (info == null) {
+			return null;
+		}
 		String type = info.getTypeName().toLowerCase();
 		if (type.equals("wifi")) {
 
